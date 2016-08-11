@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Eventflix</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrapin CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="include/owl-carousel/owl.carousel.css">
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="include/owl-carousel/owl.theme.css">
+
+        <!-- Eventflixin CSS -->
+        <link href="include/styles.css" rel="stylesheet" type="text/css"/>
+
+        <!-- jQuery -->
+        <script src="include/jquery-3.1.0.min.js" type="text/javascript"></script>
+        <!-- Bootstrapin JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Include js plugin -->
+        <script src="include/owl-carousel/owl.carousel.js"></script>
+        <script src="include/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!-- Yläpalkki -->
+        <div class="container-fluid" id="containerTop">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="navigation">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Valikko</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">
+                                        <img alt="Logo" src="images/logo.png" style="height: 36px; width: 36px; float: left; margin-top: -8px; margin-right: 6px;"> Eventflix
+                                    </a>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <!-- Hakupalkki -->
+                                    <form class="navbar-form navbar-right" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Hae tapahtumaa...">
+                                        </div>
+                                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                                    </form>
+
+                                    <ul class="nav navbar-nav navbar-right">
+
+                                        <!-- Valikkolinkit -->
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span><span class="sr-only"> Etusivu</span></a></li>
+                                            <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span><span class="sr-only"> Info</span></a></li>
+                                            <li><a href="#"><span class="glyphicon glyphicon-user"></span><span class="sr-only"> Käyttäjä</span></a></li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pääkuva / tapahtuman tiedot -->
+        <div class="container-fluid" id="containerInfo">
+            
+        </div>
+
+        <div class="container-fluid" id="containerContent">
+            <!-- Tulevat tapahtumat -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Tulevat tapahtumat</h1>
+                    <div class="well">
+                        <div id="event-carousel" class="owl-carousel">
+                            <div><img src="images/events/owl1.jpg" alt=""/></div>
+                            <div><img src="images/events/owl2.jpg" alt=""/></div>
+                            <div><img src="images/events/owl3.jpg" alt=""/></div>
+                            <div><img src="images/events/owl4.jpg" alt=""/></div>
+                            <div><img src="images/events/owl5.jpg" alt=""/></div>
+                            <div><img src="images/events/owl6.jpg" alt=""/></div>
+                            <div><img src="images/events/owl7.jpg" alt=""/></div>
+                            <div><img src="images/events/owl8.jpg" alt=""/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Viimeksi lisätyt -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Viimeksi lisätyt tapahtumat</h1>
+                    <!-- Tapahtuma-slider -->
+                    <div class="well">
+                        <div id="event-carousel" class="owl-carousel">
+                            <div><img src="images/events/owl1.jpg" alt=""/></div>
+                            <div><img src="images/events/owl2.jpg" alt=""/></div>
+                            <div><img src="images/events/owl3.jpg" alt=""/></div>
+                            <div><img src="images/events/owl4.jpg" alt=""/></div>
+                            <div><img src="images/events/owl5.jpg" alt=""/></div>
+                            <div><img src="images/events/owl6.jpg" alt=""/></div>
+                            <div><img src="images/events/owl7.jpg" alt=""/></div>
+                            <div><img src="images/events/owl8.jpg" alt=""/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer-alue -->
+        <div class="container-fluid" id="containerBottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li><a href="#">Käyttöehdot</a></li>
+                            <li><a href="#">Yhteystiedot</a></li>
+                            <li><a href="#">Lisätietoja</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>&copy; 2016 Koodinimi Eventflix, kaikki oikeudet pidätetään.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
